@@ -1,0 +1,151 @@
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vh - 76px);
+  margin-left: 20px;
+}
+
+.sidebar {
+  width: 100px;
+  background-color: #f5f5f5;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  padding: 20px 0;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.sidebar:hover {
+  transform: scale(1.04);
+  box-shadow:
+    0 0 10px rgba(94, 96, 221, 0.3),
+    0 0 20px rgba(94, 96, 221, 0.2);
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+  gap: 40px;
+}
+
+/* sidebar row */
+/* .iconContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  cursor: pointer;
+  color: #5e60dd;
+  padding-left: 30px;
+  transition: color 0.25s ease;
+} */
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  color: #5e60dd;
+  position: relative;
+}
+
+/* icon wrapper keeps alignment */
+.iconContainer svg {
+  min-width: 100px; /* same as sidebar width */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* icon animation */
+.iconContainer:hover svg {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 6px rgba(94, 96, 221, 0.7));
+}
+.iconContainer:hover {
+  color: #4c4cff;
+}
+
+/* hide text initially */
+/* 
+.sidebarTextItem {
+  position: relative;
+
+  margin-left: -10px; 
+  padding: 6px 18px;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  color: #4c4cff;
+
+  background: rgba(94, 96, 221, 0.12);
+  border-radius: 12px;
+
+  opacity: 0;
+  transform: translateX(-25px); 
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.25s ease,
+    box-shadow 0.25s ease;
+
+  white-space: nowrap;
+} */
+
+.sidebarTextItem {
+  position: absolute;
+  left: 0;
+
+  padding: 10px 26px 10px 90px;
+  min-width: 170px;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #4c4cff;
+
+  background: rgba(94, 96, 221, 0.12);
+
+  border-top: 2px solid rgba(94, 96, 221, 0.35);
+  border-right: 2px solid rgba(94, 96, 221, 0.35);
+  border-bottom: 2px solid rgba(94, 96, 221, 0.35);
+  border-left: none;
+
+  border-radius: 0 22px 22px 0;
+
+  opacity: 0;
+  transform: scaleX(0.3) scaleY(0.8);
+  transform-origin: left center;
+
+  filter: blur(6px);
+
+  white-space: nowrap;
+
+  transition:
+    transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1),
+    opacity 0.25s ease,
+    filter 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* reveal effect */
+.iconContainer:hover .sidebarTextItem {
+  max-width: 180px;
+  opacity: 1;
+  transform: scaleX(1) scaleY(1);
+  filter: blur(0);
+  border-color: rgba(94, 96, 221, 0.6);
+  text-shadow:
+    0 0 6px rgba(94, 96, 221, 0.4),
+    0 0 12px rgba(94, 96, 221, 0.2);
+  box-shadow:
+    0 0 6px rgba(94, 96, 221, 0.35),
+    0 0 14px rgba(94, 96, 221, 0.2);
+}

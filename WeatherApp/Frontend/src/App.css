@@ -1,0 +1,213 @@
+.container {
+  width: 60%;
+  max-width: 900px;
+  margin-top: 40px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 72, 0, 0.788);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  box-shadow:
+    0 0 10px rgba(255, 0, 106, 0.699),
+    0 0 20px rgba(255, 0, 255, 0.4),
+    inset 0 0 10px rgba(255, 0, 191, 0.253);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow:
+    0 0 20px rgba(128, 0, 247, 0.9),
+    0 0 40px rgba(255, 0, 157, 0.7),
+    inset 0 0 15px rgba(255, 0, 98, 0.5);
+}
+
+/* Title Section with Hover Effect */
+.header-container {
+  margin-bottom: 20px; /* Add space between title and input section */
+}
+
+.header {
+  padding: 20px 0; /* Increased padding for more space */
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Title Hover Effect: Letters change color */
+.header:hover {
+  color: #ff9800; /* Change to a warm orange when hovered */
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Enhance glow effect */
+}
+
+/* Input Section with Hover Border RGB Flow Effect */
+.input-container {
+  margin-top: 20px;
+  padding: 15px 0;
+  position: relative; /* Positioning for the border */
+  margin: 10px;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding: 15px; /* Increased padding for a larger input area */
+  width: 350px; /* Increased width of input field */
+  border: 2px solid transparent; /* Make border transparent initially */
+  border-radius: 5px;
+  font-size: 18px; /* Increased font size */
+  color: white; /* Make text color white */
+  background-color: #333; /* Dark background for the input field */
+  transition:
+    border 0.5s ease-in-out,
+    transform 0.3s ease;
+}
+
+/* 3D Hover Border Effect for Input */
+.input-container:hover .input {
+  transform: scale(1.05); /* Slight scale-up for 3D effect */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* RGB border flow */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Soft shadow */
+}
+
+/* Button Styling */
+#searchBtn {
+  padding: 18px 30px;
+  background: #ff9800;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition:
+    transform 0.2s ease,
+    background 0.3s ease;
+}
+
+/* Button Hover 3D Effect */
+#searchBtn:hover {
+  transform: scale(1.1);
+  background: #ffb74d;
+}
+
+/* Weather Data Container */
+.data-container {
+  margin-top: 20px;
+}
+
+#heading {
+  font-size: 60px;
+}
+
+.cards {
+  margin: 10px 30px 10px 30px; /* Moves it slightly from the top */
+  width: 90vw; /* Increased width */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.data-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Custom card styling */
+/* Custom card styling */
+.cCard {
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+  color: white; /* White text color for readability */
+  border: none; /* Remove default border */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transition for 3D effect */
+  border-radius: 10px; /* Optional: rounding the corners for a smoother look */
+}
+
+.cCard:hover {
+  transform: scale(1.05); /* Slightly scale the card for 3D effect */
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); /* Soft shadow for 3D effect */
+}
+
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  max-width: 230px;
+  min-width: 200px;
+  width: 100%;
+  /* Optional: rounding the top corners of the image */
+}
+
+/* Optional: Adding hover effect on the image */
+.cCard:hover .card-img-top {
+  transform: scale(1.1); /* Slight zoom effect on the image */
+  transition: transform 0.3s ease;
+}
+
+/* If you want a background image for the card */
+.cCard {
+  background-image: url("your-background-image.jpg"); /* Replace with your image */
+  background-size: cover; /* Ensure the background covers the entire card */
+  background-position: center center; /* Center the background image */
+  background-color: rgba(0, 0, 0, 0.5);
+  max-height: 2000px;
+  height: 100% !important;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 250px;
+  min-height: 230px !important;
+  height: 100%;
+}
+.loading-screen {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.spinner {
+  width: 90px;
+  height: 90px;
+  border: 10px solid rgba(255, 255, 255, 0.2);
+  border-top: 10px solid #ff9800;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error-screen {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ff5252;
+  text-align: center;
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Student Manager</h1>
+
+    <div class="container">
+      <input type="text" id="name" placeholder="Student Name" />
+
+      <input type="number" id="m1" placeholder="Mark 1" />
+      <input type="number" id="m2" placeholder="Mark 2" />
+      <input type="number" id="m3" placeholder="Mark 3" />
+
+      <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <h2>Student Records</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Marks</th>
+          <th>Total</th>
+          <th>Average</th>
+          <th>Grade</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody id="studentTable"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

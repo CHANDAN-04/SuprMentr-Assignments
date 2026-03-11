@@ -1,0 +1,115 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.MainContainer {
+  margin: 0 64px;
+  padding: 10px 20px;
+  min-width: 0px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.SubContainer {
+  display: flex;
+  flex-direction: row;
+  height: 75px;
+  padding: 25px 0px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #6366f1, #8b5cf6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.phantom {
+  font-weight: 800;
+}
+
+.blogs {
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+/* NavLinks */
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+.navlink {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4b5563;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+.navlink:hover {
+  color: #6366f1;
+  transform: translateY(-2px);
+}
+
+/* AuthButtons */
+.authButtons {
+  display: flex;
+  align-items: center;
+}
+
+.loginButton {
+  background-color: transparent;
+  padding: 5px 15px;
+  border-radius: 9999px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.loginButton:hover {
+  background-color: #6366f1;
+  color: #ffffff;
+}
+
+.signupButton {
+  background-color: #6366f1;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

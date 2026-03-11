@@ -1,0 +1,47 @@
+body {
+  font-family: Arial;
+  background: #f4f6fb;
+  text-align: center;
+}
+
+.container {
+  margin: 20px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1a4f8b;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background: #2b6cb0;
+  color: white;
+}
+
+.delete {
+  background: red;
+}

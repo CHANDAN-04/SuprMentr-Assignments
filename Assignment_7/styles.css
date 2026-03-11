@@ -1,0 +1,43 @@
+body {
+  font-family: Arial;
+  background: #f4f6fb;
+  text-align: center;
+}
+
+form {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 6px;
+}
+
+.field {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+#success {
+  color: green;
+  font-weight: bold;
+}
