@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #06b6d4, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links span {
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  color: #cbd5f5;
+}
+
+.links span:hover {
+  color: #06b6d4;
+}
