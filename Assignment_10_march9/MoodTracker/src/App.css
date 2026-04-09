@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.card {
+  width: 420px;
+  padding: 40px;
+  border-radius: 18px;
+
+  background: rgba(20, 20, 30, 0.85);
+
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.6);
+
+  text-align: center;
+  color: white;
+}
+
+.title {
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.mood-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.mood-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 0.9rem;
+  padding: 12px 14px;
+
+  border-radius: 12px;
+  border: none;
+
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.mood-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.mood-btn .emoji {
+  font-size: 1.6rem;
+}
+
+.mood-btn .label {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.mood-btn.active {
+  box-shadow: 0 0 15px #00ffff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.display {
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.display-emoji {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.display p {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.happy-theme {
+  background: radial-gradient(circle at top, #ff00cc, #3333ff);
+}
+
+.calm-theme {
+  background: radial-gradient(circle at top, #00ffff, #0044ff);
+}
+
+.neutral-theme {
+  background: radial-gradient(circle at top, #333, #000);
+}
+
+.sad-theme {
+  background: radial-gradient(circle at top, #3b3b98, #0f0f2d);
+}
+
+.angry-theme {
+  background: radial-gradient(circle at top, #ff0000, #2b0000);
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .mood-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
